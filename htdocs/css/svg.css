@@ -1,0 +1,23 @@
+path {
+    transition: transform 0.3s ease, fill 0.3s ease;
+    position: relative;
+    transition: width 1s, height 1s, transform 1s;
+  }
+  
+  path:hover {
+    fill: #f8a700; /* Hover sırasında renk değişimi */
+    transform: rotate(-0.5deg);
+  }
+  #tooltip{
+    position: absolute; 
+    display: none; 
+    background: #333; color: #fff;
+    width: auto;
+    height: 30px;
+    padding: 2px; 
+    border-radius: 4px; 
+    font-size: 12px; 
+    pointer-events: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+  }
