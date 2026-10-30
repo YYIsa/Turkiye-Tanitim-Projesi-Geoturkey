@@ -1,0 +1,189 @@
+/* Genel Ayarlar */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #f0f0f0, #ffffff);
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: #1a73e8;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.2rem;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 15px;
+}
+
+main h2 {
+    border-bottom: 2px solid #1a73e8;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    color: #1a73e8;
+}
+
+main section {
+    margin-bottom: 30px;
+}
+
+/* Şehir Bilgisi */
+.sehir_info {
+    text-align: center;
+    margin: 20px auto;
+}
+
+.sehir_info img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    border: 2px solid #1a73e8;
+}
+
+/* Gezilecek Yerler */
+.gidilecek_yer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.gidilecek_yer li {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    transition: 0.3s;
+    width: auto;
+    margin: 20px;
+    height: 270px;
+}
+
+.gidilecek_yer li:hover {
+    background-color: #6c6c6c;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.gidilecek_yer li>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+}
+/* Resmin sağındaki kısım */
+.gidilecek_yer li > .icerik {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+    gap: 10px;
+}
+
+.gidilecek_yer h3 {
+    margin: 0;
+    
+}
+.gidilecek_yer p {
+    margin: 0;
+}
+.gidilecek_yer img {
+    width: 300px;
+    height: 250px;
+    border-radius: 8px;
+    display: block;
+    flex-shrink: 0;
+}
+
+/* Yöresel Yemekler */
+.yemekler ul {
+    list-style: none;
+    padding: 0;
+}
+
+.yemekler li {
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.yemekler li:hover {
+    background-color: #f0f0f0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.yemekler img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 5px;
+    display: block;
+    margin: 10px auto;
+}
+.konum {
+    max-width: 100%;
+    display: block;
+    margin-top: 20px;  /* Üstten boşluk */
+}
+
+.konum iframe {
+    width: 300px;
+    height: 120px;  /* Haritanın görünür olması için yüksekliği artırabilirsiniz */
+    border: 2px solid #ddd;   /* Iframe kenarlarını kaldırır */
+}
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #1a73e8;
+    color: white;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+nav>a{
+    border: 2px solid #0c5fcc;
+    box-shadow: 2px 1px;
+}
+
+@media (max-width: 768px) {
+    .gidilecek_yer li {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .gidilecek_yer img {
+        width: 100%;
+        max-width: 300px;
+    }
+    .konum iframe {
+        width: 100%;
+    }
+}
